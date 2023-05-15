@@ -9,8 +9,8 @@ class Subscriber < ApplicationRecord
   accepts_nested_attributes_for :preferences
 
   validates :email, presence: true, uniqueness: true
-  # validates :preferences, presence: true
-  # validate :check_email_score
+  validates :preferences, presence: true
+  validate :check_email_score
 
   # after_create :send_welcome_email
 
