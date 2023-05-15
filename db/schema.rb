@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_05_14_175814) do
+ActiveRecord::Schema[7.0].define(version: 2023_05_15_071330) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -29,12 +29,23 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_14_175814) do
     t.index ["subscriber_id"], name: "index_preferences_on_subscriber_id"
   end
 
+  create_table "subscriber_answers", force: :cascade do |t|
+    t.bigint "subscriber_id", null: false
+    t.string "description"
+    t.string "typeform_question_reference"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["subscriber_id"], name: "index_subscriber_answers_on_subscriber_id"
+  end
+
   create_table "subscribers", force: :cascade do |t|
     t.string "email", null: false
+    t.string "coupon"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   add_foreign_key "preferences", "campaigns"
   add_foreign_key "preferences", "subscribers"
+  add_foreign_key "subscriber_answers", "subscribers"
 end
