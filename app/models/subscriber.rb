@@ -12,7 +12,7 @@ class Subscriber < ApplicationRecord
   validates :preferences, presence: true
   validate :check_email_score
 
-  # after_create :send_welcome_email
+  after_create :send_welcome_email
 
   private
 
