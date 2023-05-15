@@ -9,7 +9,7 @@ class Subscriber < ApplicationRecord
 
   validates :email, presence: true, uniqueness: true
   validates :preferences, presence: true
-  # validate :check_email_score
+  validate :check_email_score
 
   after_create :send_welcome_email
 

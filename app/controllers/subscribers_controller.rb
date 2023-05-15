@@ -8,7 +8,7 @@ class SubscribersController < ApplicationController
   def create
     @subscriber = Subscriber.new(subscriber_params)
     if @subscriber.save
-      redirect_to root_path, notice: 'Subscribed!'
+      redirect_to 'https://f3acxl7a4jh.typeform.com/to/KRfXqzoM', allow_other_host: true #root_path, notice: 'Subscribed!'
     else
       @campaigns = Campaign.all
       render :new
