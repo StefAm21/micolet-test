@@ -27,6 +27,7 @@ class SubscribersController < ApplicationController
       end
     end
     subscriber.update(coupon: SecureRandom.alphanumeric(10))
+    SubscriberMailer.coupon_email(subscriber).deliver_later
   end
 
   private
