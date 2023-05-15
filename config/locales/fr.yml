@@ -1,0 +1,21 @@
+fr:
+  activerecord:
+    models:
+      subscriber: "abonné"
+      campaign: "campagne"
+      preference: "préférence"
+    attributes:
+      subscriber:
+        email: "E-mail"
+        preferences: "Préférences"
+      campaign:
+        name: "Nom"
+  campaigns:
+    women: "Mode pour femmes"
+    men: "Mode pour hommes"
+    children: "Mode pour enfants"
+  slogan: "Presque nouvelle mode avec garantie"
+  welcome: "Bienvenue ! Bientôt, nous lancerons notre site dans"
+  welcome2: "ce pays."
+  subscribe: "Inscrivez-vous pour recevoir notre bulletin."
+  subscribe1: "Inscrivez-moi !"
