@@ -1,44 +1,15 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-HERE IS THE TEMPLATE OF ANOTHER PROJECT AS A GUIDE:
-# DATAPROP ASSIGNMENT
-The following project has been generated with [Le Wagon's template](https://github.com/lewagon/rails-templates), created entirely by [Stefano Amodei](https://www.linkedin.com/in/stefano-amodei/), using [Le Wagon coding bootcamp](https://www.lewagon.com) components and resources: [Le Wagon UI KIT](https://uikit.lewagon.com/).
-
-Special consideration take to be inspired by some [CodePen](https://codepen.io/your-work) CSS components and HTML.
+# MICOLET TEST
+The following project has been created entirely by [Stefano Amodei](https://www.linkedin.com/in/stefano-amodei/), here is how step by step you can get the app up and running:
 
 ### REQUIREMENTS
 ---
 
 - rails -v 7.0.4.3
 - ruby -v 3.1.2
-- font awesome -v 6.1
-- cloudinary -v 1.25.0
-- pagy -v 6.0.4
-- rspec -v 
+- rspec -v 3.12
+- rails-i18n -v 7.0.0
+- letter_opener
+- bootstrap
 
 
 ### How to execute in DEVELOPMENT
@@ -46,10 +17,10 @@ Special consideration take to be inspired by some [CodePen](https://codepen.io/y
 In order to run locally, follow this steps in your terminal:
 
 1. Clone the repository to your computer
-  - Using SSH: `git clone git@github.com:StefAm21/dataprop-assigment.git`
-  - Using GitHub CLI: `gh repo clone StefAm21/dataprop-assigment`
+  - Using SSH: `git clone git@github.com:StefAm21/micolet-test.git`
+  - Using GitHub CLI: `gh repo clone StefAm21/micolet-test`
 
-2. Jump into the project folder: `cd dataprop-assigment`
+2. Jump into the project folder: `cd micolet-test`
 
 3. Run the setup configuration:
   - Install all gems: `bundle install`
@@ -64,25 +35,28 @@ You can also run the server with only `dev`, but you need to XXXX...
 
 
 #### Architecture Database:
-![Database](https://github.com/StefAm21/dataprop-assigment/assets/80965786/aaf8d9ef-a379-4bb1-871a-028bac1ff989)
+![db-micolet-arc](https://github.com/StefAm21/micolet-test/assets/80965786/1d093150-6357-40d5-81d5-4562df9a201f)
 
 Reasoning behind this Model architecture:
 - User: ?
   - email
   - password
-- Property: ?
-  - xxxx
+- Campaign: ?
+  - name
+- Preference:?
+
+- Subscriber_answer:
 
 ### TESTING
 ---
 This project includes a test written in [RSpec](https://github.com/rspec/rspec-rails). Please, make sure you have **RSpec** installed and run the following command: `bundle exec rspec`.
 
-You can run the tests with: `bundle exec rspec spec/models/property_spec.rb`
+You can run the tests with: `bundle exec rspec spec/models/subscriber_spec.rb`
 
 **Special remarks:**
-- ⚠️Test coverage is 10%.
-- ℹ️ Due to time shoratge, I've decided only to have an integration test the process of a User to create a Property.
-- ❓Coverage includes User and Property models, but no controllers or views. Also, there are no integration tests.
+- ⚠️Test coverage is X%.
+- ℹ️ I've decided only to have an integration test the process of....
+- ❓Coverage includes...., but no controllers or views. Also, there are no integration tests.
 
 ### STAGING
 ---
