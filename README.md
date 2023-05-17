@@ -62,3 +62,15 @@ You can run the tests with: `bundle exec rspec spec/models/subscriber_spec.rb`
 ---
 This project has no staging enviroment at the moment.
 ℹ️ You can request enviroment variables at stephano@gmail.com
+
+### PRODUCTION
+---
+This project has no production enviroment at the moment.
+
+ℹ️ You can request enviroment variables at stephano@gmail.com
+
+
+### Bug Report
+---
+If you would like to contribute to this project, email me, or create an issue.
+
