@@ -1,6 +1,10 @@
 <h3 class="mt-1"><%= t("coupon") %></h3>
 <hr>
-<div data-tf-widget="JBc6niNc" data-tf-opacity="100" data-tf-iframe-props="title=micolet-test" data-tf-transitive-search-params data-tf-medium="snippet" style="width:100%;height:500px;"></div><script src="//embed.typeform.com/next/embed.js"></script>
+<% if Rails.env.production? %>
+  <div data-tf-widget="fvA2wCW6" data-tf-opacity="100" data-tf-iframe-props="title=Micolet(production)" data-tf-transitive-search-params data-tf-medium="snippet" style="width:100%;height:500px;"></div><script src="//embed.typeform.com/next/embed.js"></script>
+<%else%>
+  <div data-tf-widget="RR1Zul6p" data-tf-opacity="100" data-tf-iframe-props="title=Micolet" data-tf-transitive-search-params data-tf-medium="snippet" style="width:100%;height:500px;"></div><script src="//embed.typeform.com/next/embed.js"></script>
+<%end%>
 
 <div class="container mb-1">
   <div class="row">

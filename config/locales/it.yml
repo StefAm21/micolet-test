@@ -21,3 +21,5 @@ it:
   subscribe1: "Iscriviti!"
   coupon: "Completa il sondaggio per ottenere un buono sconto su Micolet"
   placeholders: "esempio@email.com"
+  back: "Ritorno"
+  visit: "Visitateci"
