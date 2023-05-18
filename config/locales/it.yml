@@ -20,3 +20,4 @@ it:
   subscribe: "Iscriviti per ricevere la nostra notiziario."
   subscribe1: "Iscriviti!"
   coupon: "Completa il sondaggio per ottenere un buono sconto su Micolet"
+  placeholders: "esempio@email.com"

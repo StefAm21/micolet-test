@@ -29,7 +29,7 @@
           <div class="d-flex justify-content-start">
             <%= f.label :email, style: "font-weight: bold;" %>
           </div>
-          <%= f.text_field :email %>
+          <%= f.text_field :email, class: "email-field", placeholder: t("placeholders") %>
           <div class="d-flex justify-content-start mt-1">
             <%= f.label :preferences, style: "font-weight: bold;" %>
           </div>
@@ -37,7 +37,7 @@
               <%= f.fields_for  Preference.new do |p| %>
                 <% @campaigns.each_with_index do |campaign, i| %>
                   <div class="d-flex">
-                    <input class="me-3" type="checkbox" value="<%=campaign.id%>" name="subscriber[preferences_attributes][<%=i%>][campaign_id]" id="subscriber_preferences_attributes_<%=i%>_campaign_id">
+                    <input class="me-3 checkbox-green" type="checkbox" value="<%=campaign.id%>" name="subscriber[preferences_attributes][<%=i%>][campaign_id]" id="subscriber_preferences_attributes_<%=i%>_campaign_id">
                     <label class="align-item-start" style="color: black;" for="subscriber_preferences_attributes_<%=i%>_campaign_id"><%= t("campaigns.#{campaign.name}") %></label>
                   </div>
                 <% end %>
@@ -45,7 +45,7 @@
             </div>
         </div>
 
-      <%= f.submit t("subscribe1"), class: "btn btn-success mt-3" %>
+      <%= f.submit t("subscribe1"), class: "btn-micolet mt-3" %>
     <% end %>
     </div>
   </div>

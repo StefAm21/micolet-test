@@ -31,7 +31,7 @@ In order to run locally, follow this steps in your terminal:
   - Spin your server: `rails s`
   - Open a second terminal and run JS: `yarn build --watch`
 
-You can also run the server with only `dev`, but you need to XXXX... 
+You can also run the server with only `dev`, but you need to XXXX...
 
 
 #### Architecture Database:
@@ -65,7 +65,7 @@ This project has no staging enviroment at the moment.
 
 ### PRODUCTION
 ---
-This project has no production enviroment at the moment.
+The latest version of this application is available at [https://micolet-test.herokuapp.com/](https://dataprop-assigment.herokuapp.com/). **Please note that this is a live version in a production environment.**
 
 ℹ️ You can request enviroment variables at stephano@gmail.com
 
@@ -73,4 +73,3 @@ This project has no production enviroment at the moment.
 ### Bug Report
 ---
 If you would like to contribute to this project, email me, or create an issue.
-
