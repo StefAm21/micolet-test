@@ -5,14 +5,15 @@ class Subscriber < ApplicationRecord
   has_many :preferences
   has_many :campaigns, through: :preferences
   has_many :answers, class_name: "SubscriberAnswer"
+  has_many :answers
 
   accepts_nested_attributes_for :preferences
 
-  validates :email, presence: true, uniqueness: true
-  validates :preferences, presence: true
-  validate :check_email_score
+  # validates :email, presence: true, uniqueness: true
+  # validates :preferences, presence: true
+  # validate :check_email_score
 
-  after_create :send_welcome_email
+  # after_create :send_welcome_email
 
   private
 

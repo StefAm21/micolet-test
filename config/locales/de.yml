@@ -4,16 +4,27 @@ de:
       subscriber: "Abonnent"
       campaign: "Kampagne"
       preference: "Präferenz"
+      question: "Frague"
+      answer: "Antworten"
     attributes:
       subscriber:
         email: "E-Mail"
-        preferences: "Präferenzen"
       campaign:
         name: "Name"
+      question:
+        title: "Titel"
+        description: "Beschreibung"
+        order: "Befehl"
+      answer:
+        content: "Inhalt"
   campaigns:
     women: "Mode für Frauen"
     men: "Mode für Männer"
     children: "Mode für Kinder"
+  questions:
+    full_name: "Vollständiger Name"
+    birth: "Geburtsdatum"
+    city: "Stadt"
   slogan: "Fast neue Mode mit Garantie"
   welcome: "Willkommen! Bald starten wir unsere Website in"
   welcome2: "diesem Land."
@@ -21,5 +32,9 @@ de:
   subscribe1: "Abonnieren!"
   coupon: "Füllen Sie die Umfrage aus, um einen Rabattgutschein bei Micolet zu erhalten"
   placeholders: "beispiel@email.com"
+  question: "Fraguen:"
   back: "Zurückkehren"
   visit: "Besuchen Sie uns"
+  next: "nächste"
+  ty: "Vielen Dank, dass Sie an der Umfrage teilgenommen und sich angemeldet haben"
+  disc: "Hier ist Ihr Rabattgutschein:"

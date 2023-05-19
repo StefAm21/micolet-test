@@ -9,15 +9,22 @@ class SubscribersController < ApplicationController
   def create
     @subscriber = Subscriber.new(subscriber_params)
     if @subscriber.save
-      redirect_to survey_subscriber_path(@subscriber) #'https://f3acxl7a4jh.typeform.com/to/KRfXqzoM', allow_other_host: true #root_path, notice: 'Subscribed!'
+      # redirect_to #survey_subscriber_path(@subscriber)
+
+      redirect_to subscriber_question_path(@subscriber, Question.first)
     else
       @campaigns = Campaign.all
       render :new
     end
   end
 
+  def thanks
+    @subscriber = Subscriber.find(params[:id])
+  end
+
   def typeform_webhook
-    # TODO COOMMENT
+    # Here instead of using the method subscriber.find, it was more practical touse subscriber.last beacause we
+    # have limited amount of answers in the free plan od Typeform
     subscriber = Subscriber.last
     if params["form_response"]["answers"]
       params["form_response"]["answers"].each do |answer|

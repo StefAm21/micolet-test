@@ -1,0 +1,17 @@
+<!-- app/views/answers/thanks.html.erb -->
+<h1 class="mt-4"><%= t("ty") %></h1>
+<hr>
+<h5 class="mt-4"><%= t("disc") %></h5>
+<%# <% random_code = SecureRandom.alphanumeric(10) %>
+<%# <p class="mt-3"><%= random_code</p> %>
+<p><%= @subscriber.coupon %></p>
+<!-- Agrega aquí el código HTML para mostrar el cupón de descuento -->
+<br>
+<div class="container mt-3 mb-1">
+  <div class="row">
+    <div class="col-md-12 d-flex">
+      <%= button_to t("back"), root_path, method: :get, class: "btn-micolet btn-gap" %>
+      <%= button_to t("visit"), "https://www.micolet.com/", method: :get, class: "btn-micolet" %>
+    </div>
+  </div>
+</div>

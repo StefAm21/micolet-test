@@ -1,0 +1,16 @@
+<!-- app/views/questions/show.html.erb -->
+<h3 class="mt-3"><%= t("coupon") %></h3>
+<hr>
+
+<h1><%= t("question") %></h1>
+<p><%= t("questions.#{@question.title}") %></p>
+
+<%= form_for @answer, url: answers_path, method: :post do |form| %>
+  <%= form.hidden_field :question_id, value: @question.id %>
+  <%= form.hidden_field :subscriber_id, value: @subscriber.id %>
+  <div>
+    <%= form.text_field :content, class: "email-field" %>
+  </div>
+
+  <%= form.submit t("next"), class: "mt-3 btn-micolet" %>
+<% end %>
