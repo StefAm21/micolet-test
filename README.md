@@ -86,7 +86,7 @@ This project has no staging enviroment at the moment.
 
 ### PRODUCTION
 ---
-The latest version of this application solved with Typeform survey is available at [https://micolet-test.herokuapp.com/](https://micolet-test.herokuapp.com/). **Please note that this is a live version in a production environment.**. This version was deployed live so that it woul be easier to connect typeform's webhook, wiyhout the need to share a different ngrok address every time.
+The latest version of this application solved with Typeform survey is available at [https://micolet-test.herokuapp.com/](https://micolet-test.herokuapp.com/). **Please note that this is a live version in a production environment.**. This version was deployed live so that it would be easier to connect typeform's webhook, without the need to share a different ngrok address every time.
 
 ℹ️ You can request enviroment variables at stephano@gmail.com
 
