@@ -35,7 +35,7 @@ In order to run locally, follow this steps in your terminal:
 In this Micolet-test, Ball 1 (connecting to API to validate emails) and Ball 2 (adding i18n) was solved in only one way.
 
 Ball 3 (completing survey to get a discount coupon), which was optional, was solved in two different ways:
-- Firstly using Typeform's webhook connected with an ngrok server during development and Heroku in production: [https://micolet-test.herokuapp.com/](https://micolet-test.herokuapp.com/).
+- Firstly using Typeform's API connected with an ngrok server during development, to be able to test their webhook response, and Heroku in production: [https://micolet-test.herokuapp.com/](https://micolet-test.herokuapp.com/).
 
 #### Architecture Database with Typeform Ball 3:
 ![db-micolet-arc](https://github.com/StefAm21/micolet-test/assets/80965786/1d093150-6357-40d5-81d5-4562df9a201f)
@@ -86,7 +86,7 @@ This project has no staging enviroment at the moment.
 
 ### PRODUCTION
 ---
-The latest version of this application solved with Typeform survey is available at [https://micolet-test.herokuapp.com/](https://micolet-test.herokuapp.com/). **Please note that this is a live version in a production environment.**
+The latest version of this application solved with Typeform survey is available at [https://micolet-test.herokuapp.com/](https://micolet-test.herokuapp.com/). **Please note that this is a live version in a production environment.**. This version was deployed live so that it woul be easier to connect typeform's webhook, wiyhout the need to share a different ngrok address every time.
 
 ℹ️ You can request enviroment variables at stephano@gmail.com
 
