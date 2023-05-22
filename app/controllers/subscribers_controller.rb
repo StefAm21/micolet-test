@@ -32,7 +32,6 @@ class SubscribersController < ApplicationController
       end
     end
     subscriber.update(coupon: SecureRandom.alphanumeric(10))
-    redirect_to thanks_subscriber_path(subscriber)
     SubscriberMailer.coupon_email(subscriber).deliver_later
   end
 
