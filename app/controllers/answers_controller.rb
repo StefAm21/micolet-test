@@ -8,7 +8,7 @@ class AnswersController < ApplicationController
       if next_question
         redirect_to subscriber_question_path(subscriber, next_question)
       else
-        subscriber.update!(coupon: SecureRandom.alphanumeric(10))
+        subscriber.update(coupon: SecureRandom.alphanumeric(10))
         redirect_to thanks_subscriber_path(subscriber)
         SubscriberMailer.coupon_email(subscriber).deliver_later
       end
