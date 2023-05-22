@@ -10,10 +10,20 @@ it:
         preferences: "Preferenze"
       campaign:
         name: "Nome"
+      question:
+        title: "Titolo"
+        description: "Descrizione"
+        order: "Ordine"
+      answer:
+        content: "Contenuto"
   campaigns:
     women: "Moda femminile"
     men: "Moda maschile"
     children: "Moda per bambini"
+  questions:
+    full_name: "Nome completo"
+    birth: "Data di nascita"
+    city: "Città"
   slogan: "Moda quasi nuova con garanzia"
   welcome: "Benvenuto! Presto lanceremo il nostro sito in"
   welcome2: "questo paese."
@@ -21,5 +31,9 @@ it:
   subscribe1: "Iscriviti!"
   coupon: "Completa il sondaggio per ottenere un buono sconto su Micolet"
   placeholders: "esempio@email.com"
+  question: "Domande:"
   back: "Ritorno"
   visit: "Visitateci"
+  next: "Avanti"
+  ty: "Grazie per aver completato il questionario e esserti iscritto"
+  disc: "Ecco il tuo buono sconto:"

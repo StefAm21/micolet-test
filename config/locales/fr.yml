@@ -7,13 +7,22 @@ fr:
     attributes:
       subscriber:
         email: "E-mail"
-        preferences: "Préférences"
       campaign:
         name: "Nom"
+      question:
+        title: "Titre"
+        description: "Description"
+        order: "Ordre"
+      answer:
+        content: "Contenu"
   campaigns:
     women: "Mode pour femmes"
     men: "Mode pour hommes"
     children: "Mode pour enfants"
+  questions:
+    full_name: "Nom complet"
+    birth: "Date de naissance"
+    city: "Ville"
   slogan: "Presque nouvelle mode avec garantie"
   welcome: "Bienvenue ! Bientôt, nous lancerons notre site dans"
   welcome2: "ce pays."
@@ -21,5 +30,9 @@ fr:
   subscribe1: "Inscrivez-moi !"
   coupon: "Complétez le sondage pour obtenir un coupon de réduction chez Micolet"
   placeholders: "exemple@email.com"
+  question: "Des questions:"
   back: "Retour"
   visit: "Rendez nous visite"
+  next: "Suivant"
+  ty: "Merci d'avoir complété le questionnaire et de vous être abonné"
+  disc: "Voici votre coupon de réduction :"

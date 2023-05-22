@@ -10,10 +10,20 @@ pt:
         preferences: "Preferências"
       campaign:
         name: "Nome"
+      question:
+        title: "Título"
+        description: "Descrição"
+        order: "Ordem"
+      answer:
+        content: "Conteúdo"
   campaigns:
     women: "Moda feminina"
     men: "Moda masculina"
     children: "Moda infantil"
+  questions:
+    full_name: "Nome completo"
+    birth: "Data de nascimento"
+    city: "Cidade"
   slogan: "Moda quase nova com garantia"
   welcome: "Bem-vindo! Em breve lançaremos nosso site em"
   welcome2: "este país."
@@ -21,5 +31,9 @@ pt:
   subscribe1: "Inscreva-se!"
   coupon: "Preencha a pesquisa para obter um cupom de desconto na Micolet"
   placeholders: "exemplo@email.com"
+  question: "Questões:"
   back: "Retornar"
   visit: "Visite-Nos"
+  next: "Próximo"
+  ty: "Obrigado por completar a pesquisa e se inscrever"
+  disc: "Aqui está o seu cupom de desconto:"
