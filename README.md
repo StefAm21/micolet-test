@@ -53,7 +53,7 @@ In order to access this second version please go to the "feat-alternative-survey
  
 So to be clear to test first version, go to heroku. To test second version, test it locally on the proper branch
 
-#### Firt version Architecture Database with Typeform Ball 3:
+#### First version Architecture Database with Typeform Ball 3:
 (Go to the production environment in [https://micolet-test.herokuapp.com/](https://micolet-test.herokuapp.com/))
 ![db-micolet-arc](https://github.com/StefAm21/micolet-test/assets/80965786/1d093150-6357-40d5-81d5-4562df9a201f)
 
