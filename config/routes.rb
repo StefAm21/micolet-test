@@ -3,6 +3,7 @@ Rails.application.routes.draw do
     root 'subscribers#new'
     resources :subscribers, only: [:create] do
       get 'survey', on: :member
+      get 'thanks', on: :member
     end
   end
 

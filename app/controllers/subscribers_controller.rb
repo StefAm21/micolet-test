@@ -16,8 +16,13 @@ class SubscribersController < ApplicationController
     end
   end
 
+  def thanks
+    @subscriber = Subscriber.find(params[:id])
+  end
+
   def typeform_webhook
-    # TODO COOMMENT
+    # Here instead of using the method subscriber.find, it was more practical to use subscriber.last because we
+    # have limited amount of answers in the free plan of Typeform
     subscriber = Subscriber.last
     if params["form_response"]["answers"]
       params["form_response"]["answers"].each do |answer|
@@ -27,6 +32,7 @@ class SubscribersController < ApplicationController
       end
     end
     subscriber.update(coupon: SecureRandom.alphanumeric(10))
+    redirect_to thanks_subscriber_path(subscriber)
     SubscriberMailer.coupon_email(subscriber).deliver_later
   end
 
