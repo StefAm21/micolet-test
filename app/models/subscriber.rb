@@ -22,7 +22,7 @@ class Subscriber < ApplicationRecord
 
   def make_abstract_request(email)
     #Todo: pasar api key a .env
-    uri = URI("https://emailvalidation.abstractapi.com/v1/?api_key=599b5d66eca6482eb17dc425854496cd&email=#{email}")
+    uri = URI("https://emailvalidation.abstractapi.com/v1/?api_key=33001481c5e54c679ab20d33c4f1f097&email=#{email}")
 
     http = Net::HTTP.new(uri.host, uri.port)
     http.use_ssl = true
