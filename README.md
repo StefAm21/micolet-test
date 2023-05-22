@@ -42,10 +42,10 @@ But Ball 3 was solved in **2 different ways**:
 - **First version:** using Typeform's API connected with an ngrok server during development, to be able to test their webhook response, and pushed to Heroku in production: [https://micolet-test.herokuapp.com/](https://micolet-test.herokuapp.com/). This version was deployed live so that it would be easier to connect typeform's webhook, without the need to share a different ngrok address every time.
 So I recommend to test this version on Heroku.
 
-- **Second Version: ** I created  2 extra models: Answer and Question, and did the survey on our backend with rails, without the use of Typeform
-In order to access this second version please go to the "feat-alternative-survey" branch. This version has not been pushed to Heroku, you can only access it locally in your Terminal:
+- **Second Version:** I created  2 extra models: Answer and Question, and did the survey on our backend with rails, without the use of Typeform
+In order to access this second version please go to the "feat-alternative-survey" branch. This version has not been pushed to Heroku, you can only access it locally:
 
-  1. Fetch all branches and change branch: `git checkout feat-alternative-survey`
+  1. Fetch branches and change branch: `git checkout feat-alternative-survey`
   2. Spin your server: `rails s` and then in other terminal run JS: `yarn build --watch`
   
  This branch is to test the second version locally.
