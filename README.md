@@ -36,6 +36,7 @@ In order to run locally, follow this steps in your terminal:
   - To test email delivery on development environment, you can go to [http://localhost:3000/letter_opener/](http://localhost:3000/letter_opener/)
 
 #**Special remarks:**
+
  Ball 1 and Ball 2 was solved in only one way. So you can test it either on development or in production.
 
 But Ball 3 was solved in **2 different ways**:
@@ -53,7 +54,7 @@ In order to access this second version please go to the "feat-alternative-survey
 So to be clear to test first version, go to heroku. To test second version, test it locally on the proper branch
 
 #### Firt version Architecture Database with Typeform Ball 3:
-(In your Terminal, go to `git co master` or to the production environment in [https://micolet-test.herokuapp.com/](https://micolet-test.herokuapp.com/))
+(Go to the production environment in [https://micolet-test.herokuapp.com/](https://micolet-test.herokuapp.com/))
 ![db-micolet-arc](https://github.com/StefAm21/micolet-test/assets/80965786/1d093150-6357-40d5-81d5-4562df9a201f)
 
 Reasoning behind this Model architecture:
@@ -69,6 +70,7 @@ Reasoning behind this Model architecture:
   - typeform_question_preference
 
 #### Second version: Architecture Database with Models "question" and "answer" Ball 3:
+(In development environment, in your Terminal  go to `git checkout feat-alternative-survey`)
 ![db2-micolet](https://github.com/StefAm21/micolet-test/assets/80965786/b16064ea-455a-4669-a2bc-30b31f51b823)
 
 - Subscriber: subscriber has many campaigns through Preference
